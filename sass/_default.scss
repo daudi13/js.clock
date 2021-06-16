@@ -1,2 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html.dark {
+    $primary-clr: #fff;
+    $secondary-clr: #333
+}
+
+html {
+    transition: all 0.5s ease-in;
+}
 
 
+html.dark {
+    background-color: #111;
+    color: $primary-clr;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    //flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+}
