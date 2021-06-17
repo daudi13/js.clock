@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;700&display=swap");
+html.dark .toggle {
+  background-color: #fff;
+  color: #000;
+}
+
+html.dark .time {
+  color: #fff;
+}
+
+html.dark .date .circle {
+  background-color: #fff;
+  color: #000;
+}
+
 .toggle {
   background-color: #000;
   color: #fff;

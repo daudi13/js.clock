@@ -1,3 +1,20 @@
+html.dark {
+
+    .toggle {
+        background-color: $secondary-clr;
+        color: $primary-clr;
+    }
+
+    .time {
+        color: $secondary-clr;
+    }
+
+    .date .circle {
+        background-color: $secondary-clr;
+        color: $primary-clr;
+    }
+}
+
 .toggle {
     background-color: $primary-clr;
     color: $secondary-clr;
