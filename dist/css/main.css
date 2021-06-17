@@ -36,6 +36,8 @@
   height: 250px;
   background-color: #c0c0c0;
   border-radius: 50%;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
 }
 
 .clock-container .clock .needle {
