@@ -29,9 +29,15 @@ function timeSet() {
     const minute = time.getMinutes();
     const second = time.getSeconds();
 
-    hourEl.style.transform = `translate(-50%, -100%) rotate()`;
+    hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(hourforClock, 0, 11, 0, 360)}deg)`;
+
+    minuteEl.style.transform = `translate(-50%, -100%) rotate(${scale(minute, 0, 59, 0, 360)}deg)`;
+
+    secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(second, 0, 59, 0, 360)}deg)`;
 }
 
-const scale = (number, inMin, inMax, outMin, outMax){
+const scale = (number, inMin, inMax, outMin, outMax) => {
     return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
 }
+
+timeSet()
