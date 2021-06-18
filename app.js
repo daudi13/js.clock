@@ -19,3 +19,19 @@ toggleEl.addEventListener('click', (e) => {
         e.target.innerHTML = 'Light mode'
     }
 })
+
+function timeSet() {
+    const time = new Date();
+    const month = time.getMonth();
+    const day = time.getDay();
+    const hour = time.getHours();
+    const hourforClock = hour % 12;
+    const minute = time.getMinutes();
+    const second = time.getSeconds();
+
+    hourEl.style.transform = `translate(-50%, -100%) rotate()`;
+}
+
+const scale = (number, inMin, inMax, outMin, outMax){
+    return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
+}
