@@ -52,7 +52,6 @@ html.dark {
             height: 65px;
             width: 3px;
             transform-origin: bottom center;
-            transition: all 0.5 s ease-in;
         }
 
         .hour {
@@ -68,6 +67,7 @@ html.dark {
             transform: translate(-50%, -100%) rotate(30deg);
             height: 100px;
             background-color: $second-clr;
+            transition: all 0.5 s ease-in;
         }
 
         .center-point {
@@ -106,7 +106,7 @@ html.dark {
     }
 
     .date .circle {
-        background-color: $primary-clr;
+        background-color: $primary-clr!important;
         color: $secondary-clr;
         border-radius: 50%;
         height: 18px;

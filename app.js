@@ -3,6 +3,7 @@ const minuteEl = document.querySelector('.minute')
 const secondEl = document.querySelector('.second')
 const timeEl = document.querySelector('.time')
 const dateEl = document.querySelector('.date')
+const ddEl = document.querySelector('.circle')
 const toggleEl = document.querySelector('.toggle')
 const html = document.querySelector('html')
 
@@ -24,6 +25,7 @@ function timeSet() {
     const time = new Date();
     const month = time.getMonth();
     const day = time.getDay();
+    const date = time.getDate();
     const hour = time.getHours();
     const hourforClock = hour % 12;
     const minute = time.getMinutes();
@@ -35,7 +37,11 @@ function timeSet() {
 
     secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(second, 0, 59, 0, 360)}deg)`;
 
-    timeEl.textContent = `${hour < 10? '0'+ hour: hour}:${minute}:${second< 10? '0'+second: second }`
+    timeEl.textContent = `${hour < 10 ? `0${hour}`: hour}:${minute < 10? `0${minute}`: minute}:${second < 10 ? `0${second}` : second}`;
+
+
+    dateEl.textContent = `${days[day]}, ${months[month]} ${ddEl.textContent = date}`
+    
 }
 
 const scale = (number, inMin, inMax, outMin, outMax) => {
