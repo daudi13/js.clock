@@ -52,6 +52,7 @@ html.dark {
             height: 65px;
             width: 3px;
             transform-origin: bottom center;
+            transition: all 0.5 s ease-in;
         }
 
         .hour {

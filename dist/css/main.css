@@ -63,6 +63,8 @@ html.dark .date .circle {
   width: 3px;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
+  -webkit-transition: all 0.5 s ease-in;
+  transition: all 0.5 s ease-in;
 }
 
 .clock-container .clock .hour {

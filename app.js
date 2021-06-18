@@ -34,6 +34,8 @@ function timeSet() {
     minuteEl.style.transform = `translate(-50%, -100%) rotate(${scale(minute, 0, 59, 0, 360)}deg)`;
 
     secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(second, 0, 59, 0, 360)}deg)`;
+
+    timeEl.textContent = `${hour < 10? '0'+ hour: hour}:${minute}:${second< 10? '0'+second: second }`
 }
 
 const scale = (number, inMin, inMax, outMin, outMax) => {
@@ -41,3 +43,5 @@ const scale = (number, inMin, inMax, outMin, outMax) => {
 }
 
 timeSet()
+
+setInterval(timeSet, 1000)
